@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(OpenCLExample)
+find_package(OpenCV REQUIRED)
+add_executable(oclgb src/gaussianblur.cpp)
+target_link_libraries(oclgb ${OpenCV_LIBS})
