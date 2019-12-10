@@ -25,7 +25,7 @@ int main_(void) {
     char *source_str;
     size_t source_size;
  
-    fp = fopen("OpenCL/vector_add_kernel.cl", "r");
+    fp = fopen("../OpenCL/vector_add_kernel.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

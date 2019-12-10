@@ -3,3 +3,9 @@ project(OpenCLExample)
 find_package(OpenCV REQUIRED)
 add_executable(oclgb src/gaussianblur.cpp)
 target_link_libraries(oclgb ${OpenCV_LIBS})
+
+add_executable(shift src/shift.cpp)
+target_link_libraries(shift ${OpenCV_LIBS})
+
+add_executable(negaposi src/negaposi.cpp)
+target_link_libraries(negaposi ${OpenCV_LIBS})
