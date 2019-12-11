@@ -9,3 +9,6 @@ target_link_libraries(shift ${OpenCV_LIBS})
 
 add_executable(negaposi src/negaposi.cpp)
 target_link_libraries(negaposi ${OpenCV_LIBS})
+
+add_executable(negaposi2 src/negaposi2.cpp)
+target_link_libraries(negaposi2 ${OpenCV_LIBS})

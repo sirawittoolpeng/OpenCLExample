@@ -149,6 +149,19 @@ negaposi/fast:
 	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/build
 .PHONY : negaposi/fast
 
+#=============================================================================
+# Target rules for targets named negaposi2
+
+# Build rule for target.
+negaposi2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 negaposi2
+.PHONY : negaposi2
+
+# fast build rule for target.
+negaposi2/fast:
+	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/build
+.PHONY : negaposi2/fast
+
 src/gaussianblur.o: src/gaussianblur.cpp.o
 
 .PHONY : src/gaussianblur.o
@@ -203,6 +216,33 @@ src/negaposi.cpp.s:
 	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/src/negaposi.cpp.s
 .PHONY : src/negaposi.cpp.s
 
+src/negaposi2.o: src/negaposi2.cpp.o
+
+.PHONY : src/negaposi2.o
+
+# target to build an object file
+src/negaposi2.cpp.o:
+	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/src/negaposi2.cpp.o
+.PHONY : src/negaposi2.cpp.o
+
+src/negaposi2.i: src/negaposi2.cpp.i
+
+.PHONY : src/negaposi2.i
+
+# target to preprocess a source file
+src/negaposi2.cpp.i:
+	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/src/negaposi2.cpp.i
+.PHONY : src/negaposi2.cpp.i
+
+src/negaposi2.s: src/negaposi2.cpp.s
+
+.PHONY : src/negaposi2.s
+
+# target to generate assembly for a file
+src/negaposi2.cpp.s:
+	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/src/negaposi2.cpp.s
+.PHONY : src/negaposi2.cpp.s
+
 src/shift.o: src/shift.cpp.o
 
 .PHONY : src/shift.o
@@ -239,14 +279,18 @@ help:
 	@echo "... oclgb"
 	@echo "... rebuild_cache"
 	@echo "... shift"
-	@echo "... negaposi"
 	@echo "... edit_cache"
+	@echo "... negaposi"
+	@echo "... negaposi2"
 	@echo "... src/gaussianblur.o"
 	@echo "... src/gaussianblur.i"
 	@echo "... src/gaussianblur.s"
 	@echo "... src/negaposi.o"
 	@echo "... src/negaposi.i"
 	@echo "... src/negaposi.s"
+	@echo "... src/negaposi2.o"
+	@echo "... src/negaposi2.i"
+	@echo "... src/negaposi2.s"
 	@echo "... src/shift.o"
 	@echo "... src/shift.i"
 	@echo "... src/shift.s"

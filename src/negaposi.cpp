@@ -31,6 +31,7 @@ int main(int argc, char **argv)
         cout << "imageSupport         : " << device.imageSupport() << endl;
         cout << "OpenCL_C_Version     : " << device.OpenCL_C_Version() << endl;
         cout << endl;
+        
     }
 
     // Select the first device
@@ -39,7 +40,8 @@ int main(int argc, char **argv)
     // Transfer Mat data to the device
     cv::Mat mat_src = cv::imread("../image/1.png", cv::IMREAD_GRAYSCALE);
     cv::UMat umat_src = mat_src.getUMat(cv::ACCESS_READ, cv::USAGE_ALLOCATE_DEVICE_MEMORY);
-    cv::UMat umat_dst(mat_src.size(), mat_src.type(), cv::ACCESS_WRITE, cv::USAGE_ALLOCATE_DEVICE_MEMORY);
+    cout << " Hey" << endl;
+    cv::UMat umat_dst(mat_src.size(), mat_src.type(), cv::USAGE_ALLOCATE_DEVICE_MEMORY);
 
     // Read the OpenCL kernel code
     std::ifstream ifs("../OpenCL/negaposi.cl");

@@ -51,4 +51,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/oclgb.dir/DependInfo.cmake"
   "CMakeFiles/shift.dir/DependInfo.cmake"
   "CMakeFiles/negaposi.dir/DependInfo.cmake"
+  "CMakeFiles/negaposi2.dir/DependInfo.cmake"
   )
