@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/te6000-tem/catkin_ws/src/OpenCLExample/src/main.c
+stdio.h
+-
+stdlib.h
+-
+OpenCL/opencl.h
+-
+CL/cl.h
+-
+gperftools/profiler.h
+-
+

@@ -7,10 +7,13 @@
 #include <CL/cl.h>
 #endif
  
+#include <gperftools/profiler.h>
+
 #define MAX_SOURCE_SIZE (0x100000)
  
-int main_(void) {
+int main() {
     // Create the two input vectors
+//     ProfilerStart("vect.prof");
     int i;
     const int LIST_SIZE = 1024;
     int *A = (int*)malloc(sizeof(int)*LIST_SIZE);
@@ -106,5 +109,6 @@ int main_(void) {
     free(A);
     free(B);
     free(C);
+//     ProfilerStop();
     return 0;
 }

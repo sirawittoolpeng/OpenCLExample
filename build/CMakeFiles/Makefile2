@@ -60,150 +60,76 @@ CMAKE_SOURCE_DIR = /home/te6000-tem/catkin_ws/src/OpenCLExample
 CMAKE_BINARY_DIR = /home/te6000-tem/catkin_ws/src/OpenCLExample/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/oclgb.dir
+# Target rules for target CMakeFiles/inv.dir
 
 # All Build rule for target.
-CMakeFiles/oclgb.dir/all:
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/depend
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles --progress-num=5,6 "Built target oclgb"
-.PHONY : CMakeFiles/oclgb.dir/all
+CMakeFiles/inv.dir/all:
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/depend
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles --progress-num=1,2 "Built target inv"
+.PHONY : CMakeFiles/inv.dir/all
 
 # Include target in all.
-all: CMakeFiles/oclgb.dir/all
+all: CMakeFiles/inv.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/oclgb.dir/rule: cmake_check_build_system
+CMakeFiles/inv.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/oclgb.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/inv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 0
-.PHONY : CMakeFiles/oclgb.dir/rule
+.PHONY : CMakeFiles/inv.dir/rule
 
 # Convenience name for target.
-oclgb: CMakeFiles/oclgb.dir/rule
+inv: CMakeFiles/inv.dir/rule
 
-.PHONY : oclgb
-
-# clean rule for target.
-CMakeFiles/oclgb.dir/clean:
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/clean
-.PHONY : CMakeFiles/oclgb.dir/clean
+.PHONY : inv
 
 # clean rule for target.
-clean: CMakeFiles/oclgb.dir/clean
+CMakeFiles/inv.dir/clean:
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/clean
+.PHONY : CMakeFiles/inv.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/inv.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/shift.dir
+# Target rules for target CMakeFiles/vect.dir
 
 # All Build rule for target.
-CMakeFiles/shift.dir/all:
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/depend
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles --progress-num=7,8 "Built target shift"
-.PHONY : CMakeFiles/shift.dir/all
+CMakeFiles/vect.dir/all:
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/depend
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles --progress-num=3,4 "Built target vect"
+.PHONY : CMakeFiles/vect.dir/all
 
 # Include target in all.
-all: CMakeFiles/shift.dir/all
+all: CMakeFiles/vect.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/shift.dir/rule: cmake_check_build_system
+CMakeFiles/vect.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/shift.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 0
-.PHONY : CMakeFiles/shift.dir/rule
+.PHONY : CMakeFiles/vect.dir/rule
 
 # Convenience name for target.
-shift: CMakeFiles/shift.dir/rule
+vect: CMakeFiles/vect.dir/rule
 
-.PHONY : shift
-
-# clean rule for target.
-CMakeFiles/shift.dir/clean:
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/clean
-.PHONY : CMakeFiles/shift.dir/clean
+.PHONY : vect
 
 # clean rule for target.
-clean: CMakeFiles/shift.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/negaposi.dir
-
-# All Build rule for target.
-CMakeFiles/negaposi.dir/all:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/depend
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles --progress-num=1,2 "Built target negaposi"
-.PHONY : CMakeFiles/negaposi.dir/all
-
-# Include target in all.
-all: CMakeFiles/negaposi.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/negaposi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/negaposi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 0
-.PHONY : CMakeFiles/negaposi.dir/rule
-
-# Convenience name for target.
-negaposi: CMakeFiles/negaposi.dir/rule
-
-.PHONY : negaposi
+CMakeFiles/vect.dir/clean:
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/clean
+.PHONY : CMakeFiles/vect.dir/clean
 
 # clean rule for target.
-CMakeFiles/negaposi.dir/clean:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/clean
-.PHONY : CMakeFiles/negaposi.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/negaposi.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/negaposi2.dir
-
-# All Build rule for target.
-CMakeFiles/negaposi2.dir/all:
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/depend
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles --progress-num=3,4 "Built target negaposi2"
-.PHONY : CMakeFiles/negaposi2.dir/all
-
-# Include target in all.
-all: CMakeFiles/negaposi2.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/negaposi2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/negaposi2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/te6000-tem/catkin_ws/src/OpenCLExample/build/CMakeFiles 0
-.PHONY : CMakeFiles/negaposi2.dir/rule
-
-# Convenience name for target.
-negaposi2: CMakeFiles/negaposi2.dir/rule
-
-.PHONY : negaposi2
-
-# clean rule for target.
-CMakeFiles/negaposi2.dir/clean:
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/clean
-.PHONY : CMakeFiles/negaposi2.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/negaposi2.dir/clean
+clean: CMakeFiles/vect.dir/clean
 
 .PHONY : clean
 

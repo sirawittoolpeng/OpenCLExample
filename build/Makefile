@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -111,164 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named oclgb
+# Target rules for targets named inv
 
 # Build rule for target.
-oclgb: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 oclgb
-.PHONY : oclgb
+inv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inv
+.PHONY : inv
 
 # fast build rule for target.
-oclgb/fast:
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/build
-.PHONY : oclgb/fast
+inv/fast:
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/build
+.PHONY : inv/fast
 
 #=============================================================================
-# Target rules for targets named shift
+# Target rules for targets named vect
 
 # Build rule for target.
-shift: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 shift
-.PHONY : shift
+vect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vect
+.PHONY : vect
 
 # fast build rule for target.
-shift/fast:
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/build
-.PHONY : shift/fast
+vect/fast:
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/build
+.PHONY : vect/fast
 
-#=============================================================================
-# Target rules for targets named negaposi
+src/inv.o: src/inv.cpp.o
 
-# Build rule for target.
-negaposi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 negaposi
-.PHONY : negaposi
-
-# fast build rule for target.
-negaposi/fast:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/build
-.PHONY : negaposi/fast
-
-#=============================================================================
-# Target rules for targets named negaposi2
-
-# Build rule for target.
-negaposi2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 negaposi2
-.PHONY : negaposi2
-
-# fast build rule for target.
-negaposi2/fast:
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/build
-.PHONY : negaposi2/fast
-
-src/gaussianblur.o: src/gaussianblur.cpp.o
-
-.PHONY : src/gaussianblur.o
+.PHONY : src/inv.o
 
 # target to build an object file
-src/gaussianblur.cpp.o:
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/src/gaussianblur.cpp.o
-.PHONY : src/gaussianblur.cpp.o
+src/inv.cpp.o:
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/src/inv.cpp.o
+.PHONY : src/inv.cpp.o
 
-src/gaussianblur.i: src/gaussianblur.cpp.i
+src/inv.i: src/inv.cpp.i
 
-.PHONY : src/gaussianblur.i
+.PHONY : src/inv.i
 
 # target to preprocess a source file
-src/gaussianblur.cpp.i:
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/src/gaussianblur.cpp.i
-.PHONY : src/gaussianblur.cpp.i
+src/inv.cpp.i:
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/src/inv.cpp.i
+.PHONY : src/inv.cpp.i
 
-src/gaussianblur.s: src/gaussianblur.cpp.s
+src/inv.s: src/inv.cpp.s
 
-.PHONY : src/gaussianblur.s
+.PHONY : src/inv.s
 
 # target to generate assembly for a file
-src/gaussianblur.cpp.s:
-	$(MAKE) -f CMakeFiles/oclgb.dir/build.make CMakeFiles/oclgb.dir/src/gaussianblur.cpp.s
-.PHONY : src/gaussianblur.cpp.s
+src/inv.cpp.s:
+	$(MAKE) -f CMakeFiles/inv.dir/build.make CMakeFiles/inv.dir/src/inv.cpp.s
+.PHONY : src/inv.cpp.s
 
-src/negaposi.o: src/negaposi.cpp.o
+src/main.o: src/main.c.o
 
-.PHONY : src/negaposi.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/negaposi.cpp.o:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/src/negaposi.cpp.o
-.PHONY : src/negaposi.cpp.o
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/src/main.c.o
+.PHONY : src/main.c.o
 
-src/negaposi.i: src/negaposi.cpp.i
+src/main.i: src/main.c.i
 
-.PHONY : src/negaposi.i
-
-# target to preprocess a source file
-src/negaposi.cpp.i:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/src/negaposi.cpp.i
-.PHONY : src/negaposi.cpp.i
-
-src/negaposi.s: src/negaposi.cpp.s
-
-.PHONY : src/negaposi.s
-
-# target to generate assembly for a file
-src/negaposi.cpp.s:
-	$(MAKE) -f CMakeFiles/negaposi.dir/build.make CMakeFiles/negaposi.dir/src/negaposi.cpp.s
-.PHONY : src/negaposi.cpp.s
-
-src/negaposi2.o: src/negaposi2.cpp.o
-
-.PHONY : src/negaposi2.o
-
-# target to build an object file
-src/negaposi2.cpp.o:
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/src/negaposi2.cpp.o
-.PHONY : src/negaposi2.cpp.o
-
-src/negaposi2.i: src/negaposi2.cpp.i
-
-.PHONY : src/negaposi2.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/negaposi2.cpp.i:
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/src/negaposi2.cpp.i
-.PHONY : src/negaposi2.cpp.i
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-src/negaposi2.s: src/negaposi2.cpp.s
+src/main.s: src/main.c.s
 
-.PHONY : src/negaposi2.s
-
-# target to generate assembly for a file
-src/negaposi2.cpp.s:
-	$(MAKE) -f CMakeFiles/negaposi2.dir/build.make CMakeFiles/negaposi2.dir/src/negaposi2.cpp.s
-.PHONY : src/negaposi2.cpp.s
-
-src/shift.o: src/shift.cpp.o
-
-.PHONY : src/shift.o
-
-# target to build an object file
-src/shift.cpp.o:
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/src/shift.cpp.o
-.PHONY : src/shift.cpp.o
-
-src/shift.i: src/shift.cpp.i
-
-.PHONY : src/shift.i
-
-# target to preprocess a source file
-src/shift.cpp.i:
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/src/shift.cpp.i
-.PHONY : src/shift.cpp.i
-
-src/shift.s: src/shift.cpp.s
-
-.PHONY : src/shift.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/shift.cpp.s:
-	$(MAKE) -f CMakeFiles/shift.dir/build.make CMakeFiles/shift.dir/src/shift.cpp.s
-.PHONY : src/shift.cpp.s
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/vect.dir/build.make CMakeFiles/vect.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -276,24 +196,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... oclgb"
 	@echo "... rebuild_cache"
-	@echo "... shift"
 	@echo "... edit_cache"
-	@echo "... negaposi"
-	@echo "... negaposi2"
-	@echo "... src/gaussianblur.o"
-	@echo "... src/gaussianblur.i"
-	@echo "... src/gaussianblur.s"
-	@echo "... src/negaposi.o"
-	@echo "... src/negaposi.i"
-	@echo "... src/negaposi.s"
-	@echo "... src/negaposi2.o"
-	@echo "... src/negaposi2.i"
-	@echo "... src/negaposi2.s"
-	@echo "... src/shift.o"
-	@echo "... src/shift.i"
-	@echo "... src/shift.s"
+	@echo "... inv"
+	@echo "... vect"
+	@echo "... src/inv.o"
+	@echo "... src/inv.i"
+	@echo "... src/inv.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
