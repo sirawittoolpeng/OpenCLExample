@@ -66,8 +66,8 @@ int main()
     Mat mat_dst = umat_dst.getMat(ACCESS_READ);
     imwrite("out1.jpg", mat_dst);
     // ProcRawCL(mat_src, "kernel_direct.cl");
-//    imshow("src", mat_src);
-   imshow("dst", mat_dst);
+    imshow("src", mat_src);
+    imshow("dst", mat_dst);
   //  ProfilerStop();
    waitKey();
     return 1;

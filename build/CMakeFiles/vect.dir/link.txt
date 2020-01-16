@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/vect.dir/src/main.c.o  -o vect  -L/usr/lib/x86_64-linux-gnu/libOpenCL.so -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libOpenCL.so -lOpenCL 
