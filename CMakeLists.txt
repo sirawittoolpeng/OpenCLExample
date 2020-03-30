@@ -8,5 +8,5 @@ link_directories(${OpenCL_LIBRARY})
 add_executable(inv src/inv.cpp)
 target_link_libraries(inv ${OpenCV_LIBS} ${GPERFTOOLS_LIBRARIES}) 
 
-add_executable(vect src/main.c)
+add_executable(vect src/vector.cpp)
 target_link_libraries(vect ${OpenCL_LIBRARY} ${GPERFTOOLS_LIBRARIES})

@@ -1,5 +1,5 @@
 # OpenCLExample
-dumb ass rep for learning OpenCL for me
+Repo for learning OpenCL's custom kernel which actually worked for my company's PC
 
 # Building and Compiling
 
